@@ -8,7 +8,7 @@ function App() {
 
     return (
         <div className="App">
-            <BrowserRouter>
+            <BrowserRouter basename="/prayer-journal">
                 <Routes>
                     <Route path="/" element={<ContactList />} />
                     <Route path="/contact/detail/:contactId" element={<ContactDetail />} />  
