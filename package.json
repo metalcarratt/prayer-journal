@@ -1,6 +1,7 @@
 {
   "name": "shepherding-journal",
   "version": "0.1.0",
+  "homepage": "https://metalcarratt.github.io",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
@@ -17,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build docs",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
