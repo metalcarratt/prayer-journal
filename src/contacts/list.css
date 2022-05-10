@@ -1,0 +1,29 @@
+.contact-item:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.contact-item {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+button.big {
+    width: 100%;
+    padding: 10px;
+}
+
+.new-contact {
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 4px;
+}

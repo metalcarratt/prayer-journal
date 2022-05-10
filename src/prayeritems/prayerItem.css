@@ -1,0 +1,8 @@
+fieldset {
+    display: inline-block;
+    border: none;
+}
+
+.prayer-item {
+    border: 1px solid #aaa;
+}
