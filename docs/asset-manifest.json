@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.ebb2b19b.css",
-    "main.js": "/static/js/main.6dca9ccc.js",
-    "static/js/787.e80d4c3c.chunk.js": "/static/js/787.e80d4c3c.chunk.js",
-    "index.html": "/index.html",
-    "main.ebb2b19b.css.map": "/static/css/main.ebb2b19b.css.map",
-    "main.6dca9ccc.js.map": "/static/js/main.6dca9ccc.js.map",
-    "787.e80d4c3c.chunk.js.map": "/static/js/787.e80d4c3c.chunk.js.map"
+    "main.css": "/prayer-journal/static/css/main.ebb2b19b.css",
+    "main.js": "/prayer-journal/static/js/main.fbc1c878.js",
+    "static/js/787.e80d4c3c.chunk.js": "/prayer-journal/static/js/787.e80d4c3c.chunk.js",
+    "index.html": "/prayer-journal/index.html",
+    "main.ebb2b19b.css.map": "/prayer-journal/static/css/main.ebb2b19b.css.map",
+    "main.fbc1c878.js.map": "/prayer-journal/static/js/main.fbc1c878.js.map",
+    "787.e80d4c3c.chunk.js.map": "/prayer-journal/static/js/787.e80d4c3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ebb2b19b.css",
-    "static/js/main.6dca9ccc.js"
+    "static/js/main.fbc1c878.js"
   ]
 }
