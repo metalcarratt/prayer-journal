@@ -1,0 +1,51 @@
+.steps {
+    position: static;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 760px;
+    height: 100%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.steps-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #333a;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .steps {
+      width: calc(100% - 60px);
+    }
+  }
+
+.steps-bg.hidden {
+    display: none;
+}
+
+.steps h3 {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.steps ol {
+    margin-top: 0;
+}
+
+.steps li {
+    text-align: left;
+}
+
+.steps li:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}

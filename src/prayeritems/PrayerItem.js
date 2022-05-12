@@ -33,11 +33,6 @@ function PrayerItem(props) {
                 <span>{ prayerItem.title }</span>
             </fieldset>
 
-            <fieldset>
-                <label>Date begun:</label>
-                <span>{ prayerItem.dateBegun }</span>
-            </fieldset>
-
             {
                 prayerItem.dateAccomplished === ''
                 ? <button onClick={clickPrayerAnswered}>Prayed Answered</button>
@@ -52,6 +47,11 @@ function PrayerItem(props) {
             <br/>
 
             <fieldset>
+                <label>Date begun:</label>
+                <span>{ prayerItem.dateBegun }</span>
+            </fieldset>
+
+            <fieldset>
                 <label>Dates prayed:</label>
                 <span>{ listUtil.makeCommaSeparatedList(prayerItem.datesPrayed) }</span>
                 { !prayerItem.datesPrayed.includes(todaysDate) && prayerItem.dateAccomplished === ''
@@ -59,8 +59,6 @@ function PrayerItem(props) {
                     : ''
                 }
             </fieldset>
-
-            
         </div>
     );
 }
