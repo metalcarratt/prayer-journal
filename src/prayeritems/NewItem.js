@@ -23,7 +23,7 @@ function NewPrayerItem(props) {
     }
 
     return (
-        <div class="newItem">
+        <div className="newItem">
             <fieldset>
                 <label>Particular need of prayer</label>
                 <input

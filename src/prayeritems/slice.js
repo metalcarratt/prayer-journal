@@ -41,9 +41,18 @@ const itemsSlice = createSlice({
 
             const item = state.items.find(item => item.id === payload.itemId);
             item.dateAccomplished = payload.dateAccomplished;
+        },
+        updateItem(state, {payload}) {
+            console.log("update item");
+            console.log(payload);
+            const item = state.items.find((_item) => _item.id === payload.id);
+            item.title = payload.title;
+            item.dateBegun = payload.dateBegun;
+            item.datesPrayed = payload.datesPrayed;
+            item.dateAccomplished = payload.dateAccomplished;
         }
     }
 });
 
-export const { addItem, addDatePrayed, prayerAnswered } = itemsSlice.actions;
+export const { addItem, addDatePrayed, prayerAnswered, updateItem } = itemsSlice.actions;
 export default itemsSlice.reducer;

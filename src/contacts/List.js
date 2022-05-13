@@ -13,7 +13,7 @@ function ListContacts() {
     }
 
     return (
-        <div class="page">
+        <div className="page">
             <h1>Progressive Prayer Journal</h1>
             {contacts.map((contact, index) => 
                 <div className="contact-item" key={index} onClick={(e) => clickExistingContact(contact.id, e)}>{contact.name}</div>

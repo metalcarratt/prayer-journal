@@ -15,7 +15,7 @@ function ContactDetail() {
     }
 
     return (
-        <div class="page">
+        <div className="page">
             <h1>{contact.name}</h1>
             <h2>Items for prayer</h2>
 
@@ -34,7 +34,7 @@ function ContactDetail() {
             }
 
             <br/>
-            <button class="big" onClick={clickBack}>Back</button>
+            <button className="big" onClick={clickBack}>Back</button>
         </div>
     );
 }

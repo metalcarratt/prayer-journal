@@ -4,6 +4,8 @@ import listUtil from '../util/listUtil.js';
 import { addDatePrayed, prayerAnswered } from './slice.js';
 import { useDispatch } from 'react-redux';
 import './prayerItem.css';
+import EditPrayerItem from './edit/EditPrayerItem.js';
+import { useState } from 'react';
 
 function PrayerItem(props) {
     const dispatch = useDispatch();
@@ -11,6 +13,8 @@ function PrayerItem(props) {
     const todaysDate = dateUtil.todaysDate();
 
     const prayerItem = useSelector((state) => state.items.items.find(item => item.id === props.itemId));
+
+    const [showEdit, setShowEdit] = useState(false);
 
     function clickPrayedToday() {
         dispatch(addDatePrayed({
@@ -27,7 +31,7 @@ function PrayerItem(props) {
     }
 
     return (
-        <div class="prayer-item">
+        <div className="prayer-item">
             <fieldset>
                 <label>Need for prayer:</label>
                 <span>{ prayerItem.title }</span>
@@ -59,6 +63,16 @@ function PrayerItem(props) {
                     : ''
                 }
             </fieldset>
+            <button className="floatTop" onClick={() => setShowEdit(true)}>Edit</button>
+
+            { 
+                showEdit ? 
+                    <EditPrayerItem
+                        onClose={() => setShowEdit(false)}
+                        prayerItem={prayerItem}
+                    />
+                    : ''
+            }
         </div>
     );
 }

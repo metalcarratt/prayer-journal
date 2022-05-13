@@ -1,4 +1,5 @@
 import './steps.css';
+import '../popup.css';
 
 const items1 = [
     'Open to hear the word',
@@ -50,8 +51,8 @@ function StepsList(props) {
     }
 
     return (
-        <div class="steps-bg">
-            <div class="steps">
+        <div className="popup-bg">
+            <div className="popup steps">
                 <h3>Begotten through the gospel</h3>
                 <ol>
                     {

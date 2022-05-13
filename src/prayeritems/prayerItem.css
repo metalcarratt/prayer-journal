@@ -5,8 +5,17 @@ fieldset {
 
 .prayer-item {
     border: 1px solid #aaa;
+    position: relative;
 }
 
 button + button {
     margin-left: 10px;
+}
+
+button.floatTop {
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    right: 0;
+    margin-right: 5px;
 }
