@@ -12,6 +12,11 @@ function ListContacts() {
         navigate(`contact/detail/${id}`);
     }
 
+    function clickReset() {
+        localStorage.removeItem('store-contacts');
+        window.location.reload();
+    }
+
     return (
         <div className="page">
             <h1>Progressive Prayer Journal</h1>
@@ -19,6 +24,7 @@ function ListContacts() {
                 <div className="contact-item" key={index} onClick={(e) => clickExistingContact(contact.id, e)}>{contact.name}</div>
             )}
             <NewContact />
+            <a href="#" onClick={clickReset}>Reset</a>
         </div>
     )
 }
