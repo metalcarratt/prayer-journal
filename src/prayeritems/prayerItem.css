@@ -4,18 +4,39 @@ fieldset {
 }
 
 .prayer-item {
-    border: 1px solid #aaa;
+    border-bottom: 1px solid black;
     position: relative;
+    background-color: #a2c1dc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    margin: 5px;
+}
+
+.prayer-item:nth-child(2n) {
+    background-color: #eaf8ff;
 }
 
 button + button {
     margin-left: 10px;
 }
 
+/*
 button.floatTop {
     position: absolute;
     top: 0;
     margin-top: 5px;
     right: 0;
     margin-right: 5px;
+}
+*/
+
+.newItem {
+    border: 1px solid #dcecf0;
+}
+
+.newItem h3 {
+    display: inline-block;
 }

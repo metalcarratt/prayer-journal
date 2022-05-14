@@ -17,7 +17,7 @@ function ContactDetail() {
     return (
         <div className="page">
             <h1>{contact.name}</h1>
-            <h2>Items for prayer</h2>
+            <h2>Items for prayer:</h2>
 
             { prayerItems.filter(item => item.dateAccomplished === '').map((item, index) => 
                     <PrayerItem itemId={item.id} key={index} />  
@@ -26,7 +26,7 @@ function ContactDetail() {
 
             <NewPrayerItem contactId={contactId} />
 
-            <h2>Answered items</h2>
+            <h2>Answered items:</h2>
 
             { prayerItems.filter(item => item.dateAccomplished !== '').map((item, index) => 
                     <PrayerItem itemId={item.id} key={index} />  

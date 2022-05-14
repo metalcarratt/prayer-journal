@@ -1,6 +1,7 @@
 .contact-item:hover {
     cursor: pointer;
-    background-color: #ccc;
+    background-color: #72728c;
+    color: white;
 }
 
 .contact-item {

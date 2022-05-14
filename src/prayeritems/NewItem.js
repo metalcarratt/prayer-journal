@@ -24,8 +24,9 @@ function NewPrayerItem(props) {
 
     return (
         <div className="newItem">
+            <h3>New - </h3>
             <fieldset>
-                <label>Particular need of prayer</label>
+                <label>Need of prayer:</label>
                 <input
                     type="text"
                     value={title}

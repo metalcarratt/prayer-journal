@@ -32,38 +32,42 @@ function PrayerItem(props) {
 
     return (
         <div className="prayer-item">
-            <fieldset>
-                <label>Need for prayer:</label>
-                <span>{ prayerItem.title }</span>
-            </fieldset>
+            <span class="left">
+                <fieldset>
+                    <label>Need for prayer:</label>
+                    <span className="value">{ prayerItem.title }</span>
+                </fieldset>
 
-            {
-                prayerItem.dateAccomplished === ''
-                ? <button onClick={clickPrayerAnswered}>Prayed Answered</button>
-                : (
-                    <fieldset>
-                        <label>Date accomplished:</label>
-                        <span>{ prayerItem.dateAccomplished }</span>
-                    </fieldset>
-                )
-            }
-
-            <br/>
-
-            <fieldset>
-                <label>Date begun:</label>
-                <span>{ prayerItem.dateBegun }</span>
-            </fieldset>
-
-            <fieldset>
-                <label>Dates prayed:</label>
-                <span>{ listUtil.makeCommaSeparatedList(prayerItem.datesPrayed) }</span>
-                { !prayerItem.datesPrayed.includes(todaysDate) && prayerItem.dateAccomplished === ''
-                    ? <button onClick={clickPrayedToday}>Prayed Today</button>
-                    : ''
+                {
+                    prayerItem.dateAccomplished === ''
+                    ? <button onClick={clickPrayerAnswered}>Prayed Answered</button>
+                    : (
+                        <fieldset>
+                            <label>Date accomplished:</label>
+                            <span className="value">{ prayerItem.dateAccomplished }</span>
+                        </fieldset>
+                    )
                 }
-            </fieldset>
-            <button className="floatTop" onClick={() => setShowEdit(true)}>Edit</button>
+
+                <br/>
+
+                <fieldset>
+                    <label>Date begun:</label>
+                    <span className="value">{ prayerItem.dateBegun }</span>
+                </fieldset>
+
+                <fieldset>
+                    <label>Dates prayed:</label>
+                    <span className="value">{ listUtil.makeCommaSeparatedList(prayerItem.datesPrayed) }</span>
+                    { !prayerItem.datesPrayed.includes(todaysDate) && prayerItem.dateAccomplished === ''
+                        ? <button onClick={clickPrayedToday}>Prayed Today</button>
+                        : ''
+                    }
+                </fieldset>
+            </span>
+            <span class="right">
+                <button className="floatTop" onClick={() => setShowEdit(true)}>Edit</button>
+            </span>
 
             { 
                 showEdit ? 
