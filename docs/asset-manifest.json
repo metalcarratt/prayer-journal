@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/prayer-journal/static/css/main.bcbf3975.css",
-    "main.js": "/prayer-journal/static/js/main.cba1603b.js",
+    "main.js": "/prayer-journal/static/js/main.67f26f9b.js",
     "static/js/787.e80d4c3c.chunk.js": "/prayer-journal/static/js/787.e80d4c3c.chunk.js",
     "index.html": "/prayer-journal/index.html",
     "main.bcbf3975.css.map": "/prayer-journal/static/css/main.bcbf3975.css.map",
-    "main.cba1603b.js.map": "/prayer-journal/static/js/main.cba1603b.js.map",
+    "main.67f26f9b.js.map": "/prayer-journal/static/js/main.67f26f9b.js.map",
     "787.e80d4c3c.chunk.js.map": "/prayer-journal/static/js/787.e80d4c3c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bcbf3975.css",
-    "static/js/main.cba1603b.js"
+    "static/js/main.67f26f9b.js"
   ]
 }
