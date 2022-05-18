@@ -6,7 +6,6 @@ import ContactDetail from './contacts/Detail.js';
 
 function App() {
     
-
     return (
         <div className="App">
             <BrowserRouter basename="/prayer-journal">

@@ -16,7 +16,7 @@ function NewContact() {
     }
 
     return (
-        <div class="new-contact">
+        <div className="new-contact">
             <fieldset>
                 <label>Name:</label>
                 <input type="text" value={name} onChange={changeName}/>

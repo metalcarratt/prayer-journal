@@ -6,7 +6,7 @@ fieldset {
 .prayer-item {
     border-bottom: 1px solid black;
     position: relative;
-    background-color: #a2c1dc;
+    background-color: #cfe6f9;
     display: flex;
     justify-content: space-between;
 }
